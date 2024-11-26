@@ -1,0 +1,19 @@
+[
+    {
+        "namespace": "myapi",
+        "functions": [
+            {
+                "name": "run_filters_on_folder",
+                "type": "function",
+                "async": true,
+                "parameters": []
+            },
+            {
+                "name": "run_filters_on_message",
+                "type": "function",
+                "async": true,
+                "parameters": []
+            }
+        ]
+    }
+]

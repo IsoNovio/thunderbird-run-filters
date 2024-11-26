@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Run All Filters",
+    "description": "Run all filters on the current folder/message.",
+    "version": "0.1",
+    "author": "Yinong Wang",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "run-all-rules@IsoNovio",
+            "strict_min_version": "128.0"
+        }
+    },
+    "icons": {
+        "24": "images/icon.svg"
+    },
+    "permissions": [
+        "menus"
+    ],
+    "experiment_apis": {
+        "myapi": {
+            "schema": "myapi/schema.json",
+            "parent": {
+                "scopes": ["addon_parent"],
+                "paths": [["myapi"]],
+                "script": "myapi/api.js"
+            }
+        }
+    },
+    "background": {
+        "scripts": [
+            "scripts/background.js"
+        ]
+    }
+}
