@@ -1,0 +1,1 @@
+# thunderbird-run-all-filters
