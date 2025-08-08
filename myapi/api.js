@@ -1,4 +1,5 @@
-var { ExtensionCommon } = ChromeUtils.import("resource://gre/modules/ExtensionCommon.jsm");
+const { ExtensionCommon } = ChromeUtils.importESModule("resource://gre/modules/ExtensionCommon.sys.mjs");
+console.log(ExtensionCommon);
 
 var myapi = class extends ExtensionCommon.ExtensionAPI {
     getAPI(context) {
